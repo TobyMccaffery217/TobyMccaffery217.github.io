@@ -1,0 +1,447 @@
+html, body{
+  height: 200%;
+}
+
+body{
+  margin: 0;
+  font-family: 'Lilita One', cursive;
+  background-image: url("../Images/back.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+ul{
+  position:fixed;
+  margin:0;
+  padding:0;
+  top:0;
+  width:100%;
+  z-index: 200;
+
+}
+a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  margin: 0 40px;
+  font-size: 150%;
+}
+
+
+
+
+
+.hero-image {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://yesofcorsa.com/wp-content/uploads/2016/12/4K-Black-Wallpaper-For-Desktop.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.g1, .glogo, .g2{
+  color: black;
+
+  background-color:  #42B2E1;
+  font-size: 500%;
+  border-color: red;
+  z-index: 200;
+  height: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-areas: "Menu Logo Logo Logo Logo Contact";
+  z-index: 2000;
+  height: 10%;
+}
+.g1 {
+  grid-area: Menu;
+}
+.glogo {
+  grid-area: Logo;
+}
+.image{
+  position: absolute;
+  left: 40%;
+  height: 10vw;
+  width: 20vw;
+}
+.g2 {
+
+  grid-area: Contact;
+  text-allign: center;
+  justify-content: center;
+}
+
+
+
+.contactbutton {
+  background-color: yellow;
+  color: #42B2E1;
+  display: inline-block;
+  font-size: 3VH;
+  cursor: pointer;
+  border-radius: 5%;
+  width: 70%;
+  height: 65%;
+  font-family: 'Lilita One', cursive;
+  line-height:180%;
+  margin: 0 38%;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  position: relative;
+  flex-wrap: nowrap;
+
+}
+.menubutton {
+  background-color: yellow;
+  color: #42B2E1;
+  display: inline-block;
+  font-size: 3Vh;
+  cursor: pointer;
+  border-radius: 5%;
+  width: 100%;
+  height: 65%;
+  margin: 0% -30%;
+  font-family: 'Lilita One', cursive;
+}
+
+.menutext{
+  grid-area: MText;
+  font-size: 3.5vw;
+  text-align: right;
+
+}
+.contacttext{
+  grid-area: CText;
+  font-size: 3.5vw
+
+}
+
+#contactsymbol{
+  grid-area: CSymbol;
+  font-size: 3vw;
+  line-height: 110%;
+}
+
+.menugridcontainer{
+  display: grid;
+  grid-template-areas: "MText MText MText MSymbol";
+  height: 100%;
+
+}
+.contactgridcontainer{
+  display: grid;
+  grid-template-areas: "CSymbol CText CText CText";
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+slider{
+  top: 24%;
+  left: 5%;
+  display: block;
+  width: 60%;
+  height: 70%;
+  background-color: transparent;
+  overflow: hidden;
+  position: absolute;
+}
+
+slider > * {
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background:transparent ;
+  animation: slide 20s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: -20s;
+  background-image: url("../Images/campphuket.jpg");
+  background-size:contain;
+  float: center
+
+}
+
+slide:nth-child(2){
+  left: 0%;
+  animation-delay: -15s;
+  background-image: url("../Images/islandhoppingtour.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(3){
+  left: 0%;
+  animation-delay: -10s;
+  background-image: url("../Images/campelephants.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(4){
+  left: 0%;
+  animation-delay: -5s;
+  background-image: url("../Images/campchiangmai.jpg");
+  background-size: cover;
+  background-position: center;
+}
+slide:nth-child(5){
+  left: 0%;
+  animation-delay: 0s;
+  background-image: url("../Images/trialblazing.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+slide p{
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 340px;
+  color: white;
+}
+
+@keyframes slide{
+  0% {left: 100%; width: 100%;}
+  5% {left: 0%; }
+  25% {left: 0%; }
+  30% {left: -100%; width: 100%;}
+  30.0001% {left: -100%; width: 0%;}
+  100% {left: 100%; width: 0%;}
+}
+
+
+
+
+
+
+
+
+
+.welcomebox{
+  height: 56%;
+  width: 25%;
+  z-index: 50;
+  background-color: white;
+  /* margin: 21.5% 70%; */
+  grid-area: Text;
+  position: absolute;
+  top: 37%;
+  left: 70%;
+  border: 10px solid black;
+}
+.welcomeboxtext{
+  font-size: 150%;
+  color: black;
+  margin: 2% 2%;
+  z-index: 50;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  overflow-y: hidden;
+}
+
+.welcomeboxbar {
+  height: 13%;
+  width: 25%;
+  background-color: #42B2E1;
+  z-index: 51;
+  grid-area: Text;
+  position: absolute;
+  top: 24%;
+  left: 70%;
+  text-align: center;
+  font-size: 5vw;
+  color: WHITE;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+.overlay{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  background-image: url("../Images/Menu Background.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: ;
+  top: 5%;
+  left: 0;
+  background;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 60;
+}
+
+
+.menuopen{
+  height: 100%;
+}
+.menuclosed{
+  height: 0%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+
+  color: yellow;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1%;
+  font-size: 60px;
+  z-index: 100000000000000000000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:750px){
+  .contactbutton {
+    color: red;
+    margin: 4px 60%;
+    line-height: 30%;
+    width: 10vw;
+  }
+  .menubutton {
+    margin: 1% -90%;
+
+  }
+
+  slider{
+    top: 18%;
+    left: 10%;
+    display: block;
+    width: 80%;
+    height: 30%;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .welcomebox {
+    height: 40%;
+    width: 80%;
+    z-index: 51;
+    background-color: white;
+    /* margin: 21.5% 70%; */
+    grid-area: Text;
+    position: absolute;
+    top: 53%;
+    left: 10%;
+  }
+
+  .welcomeboxbar {
+    height: 10%;
+    width: 80%;
+    z-index: 50;
+    background-color: #42B2E1;
+    grid-area: Text;
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    background-color:
+  }
+}
